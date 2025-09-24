@@ -17,3 +17,19 @@ const cart = [
 
 // Try: "regular", "student", "member", or "vip"
 const customerType = "member";
+
+//Task1
+function getCategoryDiscount(category) {
+  switch (category) {
+    case "gear":
+      return 0.10;
+    case "apparel":
+      return 0.15;
+    case "snacks":
+      return 0.08;
+    case "access":
+      return 0.05;
+    default:
+      return 0;
+  }
+}
