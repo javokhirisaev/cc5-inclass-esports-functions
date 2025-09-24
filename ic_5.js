@@ -33,3 +33,9 @@ function getCategoryDiscount(category) {
       return 0;
   }
 }
+
+//Task2
+function priceAfterCategoryDiscount(product) {
+  const rate = getCategoryDiscount(product.category);
+  return product.price * (1 - rate);
+}
