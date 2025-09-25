@@ -39,3 +39,10 @@ function priceAfterCategoryDiscount(product) {
   const rate = getCategoryDiscount(product.category);
   return product.price * (1 - rate);
 }
+
+
+//Task3
+function findProductById(id) {
+  const product = products.find(p => p.id === id);
+  return product || null;
+}
